@@ -68,7 +68,7 @@
     background: black;
 
     animation-name: fadeOut;
-    animation-duration: 0.5s;
+    animation-duration: 1.1s;
     animation-delay: 0.2s;
     animation-fill-mode: forwards;
 }
@@ -96,7 +96,7 @@
 
 @media (min-width: 400px) {
     .links a {
-	margin: 0px 25px 0px 0px;
+	margin: 0px 17px;
     }
 }
 
