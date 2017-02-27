@@ -1,5 +1,34 @@
 /* ANIMATIONS */
 
+@keyframes fadeInUp {
+    from {
+	opacity: 0;
+	left: 20px;
+    }
+    to {
+	opacity: 1;
+	left: 0px;
+    }
+}
+
+@-web-keyframes fadeInUp {
+    from {
+	opacity: 0;
+	left: 20px;
+    }
+    to {
+	opacity: 1;
+	left: 0px;
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+    animation-duration: 1.0s;
+    -webkit-animation-duration: 1.0s;
+}
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacaity: 1; }
@@ -46,11 +75,6 @@
 
 /* GENERAL */
 
-section {
-    position: relative;
-    text-align: center;
-}
-
 .centered {
     position: absolute;
     top: 50%;
@@ -61,13 +85,16 @@ section {
 /* HOME */
 
 .home {
+    text-align: center;
     height: 100vh;
     color: white;
-    background: black;
-    background-image: -webkit-linear-gradient(left top, rgba(33,41,140,0.7), rgba(30,219,193,0.8)), url("../images/hawaii_leaves.jpg");
-    background-image: linear-gradient(left top, rgba(33,41,140,0.7), rgba(30,219,193,0.8)), url("../images/hawaii_leaves.jpg");
+
+    background-color: black;
+    background-image: -webkit-linear-gradient(left top, rgba(33,41,140,0.7), rgba(30,219,193,0.8)), url("../images/hawaii_leaves-min.jpg");
+    background-image: linear-gradient(left top, rgba(33,41,140,0.7), rgba(30,219,193,0.8)), url("../images/hawaii_leaves-min.jpg");
     background-size: cover;
     background-position: center center;
+    padding-top: 60px;
 }
 
 .home h1 {
@@ -85,12 +112,22 @@ section {
 }
 
 @media (min-width: 400px) {
+    .home {
+    }
     .links a {
-	margin: 0px 17px;
+	margin: 0px 25px 0px 0px;
     }
 }
 
-/* CONTACT */
+@media (min-width: 550px) {
+    .home {
+	text-align: left;
+    }
+}
+
+.timeline {
+    text-align: center;
+}
 
 .contact {
     padding-top: 40px;
@@ -101,7 +138,7 @@ section {
     margin-bottom: 1rem;
 }
 
-.contact .divider {
+.divider {
     position: relative;
     left: 50%;
     width: 75px;
