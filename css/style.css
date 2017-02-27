@@ -63,8 +63,9 @@ section {
 .home {
     height: 100vh;
     color: white;
-    background-image: -webkit-linear-gradient(left top, rgba(33,41,140,0.7), rgba(30,219,193,0.8));
-    background-image: linear-gradient(left top, rgba(33,41,140,0.7), rgba(30,219,193,0.8));
+    background: black;
+    background-image: -webkit-linear-gradient(left top, rgba(33,41,140,0.7), rgba(30,219,193,0.8)), url("../images/hawaii_leaves.jpg");
+    background-image: linear-gradient(left top, rgba(33,41,140,0.7), rgba(30,219,193,0.8)), url("../images/hawaii_leaves.jpg");
     background-size: cover;
     background-position: center center;
 }
@@ -115,3 +116,4 @@ section {
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
 }
+
